@@ -3,32 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <meta name="description" content="Mobile Application HTML5 Template" />
-
-    <meta name="copyright" content="MACode ID, https://www.macodeid.com/" />
-
+    <meta name="copyright" content="Adorway, https://www.adorway.com/" />
     <title>BWay Ventures</title>
-
     <link
       rel="shortcut icon"
       href="../assets/favicon.png"
       type="image/x-icon"
     />
-
     <link rel="stylesheet" href="../assets/css/maicons.css" />
-
     <link rel="stylesheet" href="../assets/vendor/animate/animate.css" />
-
     <link
       rel="stylesheet"
       href="../assets/vendor/owl-carousel/css/owl.carousel.min.css"
     />
-
     <link rel="stylesheet" href="../assets/css/bootstrap.css" />
-
     <link rel="stylesheet" href="../assets/css/mobster.css" />
   </head>
   <body>
@@ -419,46 +408,166 @@
             >
               <label class="btn active">
                 <input type="radio" name="options" id="option1" checked />
-                Monthly
+                Calculate
               </label>
               <label class="btn">
-                <input type="radio" name="options" id="option2" /> Annually
+                <input type="radio" name="options" id="option2" /> Negotiate
               </label>
             </div>
           </div>
         </div>
-        <div class="pricing-table mt-5 wow fadeInUp">
-          <div class="pricing-item active no-transform">
+        <div class="pricing-table mt-5">
+          <div class="pricing-item active no-transform" style="width: 40em">
             <div class="pricing-header">
-              <h5>Business Plan</h5>
-              <h1 class="fw-normal">$49.00</h1>
+              <h5 class="text-muted">Price optimization</h5>
+              <h1 class="fw-normal">Get Estimate</h1>
+            </div>
+            <div style="width: 30em">
+              <label for="" class="">Institute Name</label>
+              <input
+                type="text"
+                required
+                class="form-control rounded-pill"
+                name="institutename"
+                id="institutename"
+                placeholder="Institute/Uni/School/College Name"
+                style="-moz-appearance: textfield"
+              />
+              <label for="" class="text-muted">Number of Students</label>
+              <input
+                type="number"
+                required
+                class="form-control rounded-pill"
+                name="studentscount"
+                id="studentscount"
+                placeholder="5000"
+                style="-moz-appearance: textfield"
+              />
+              <label for="" class="text-muted">Management Team Strength</label>
+              <input
+                type="number"
+                required
+                class="form-control rounded-pill"
+                name="managementteamcount"
+                id="managementteamcount"
+                placeholder="200"
+                style="-moz-appearance: textfield"
+              />
             </div>
             <div class="pricing-body">
-              <ul class="theme-list">
-                <li class="list-item">Push Notification</li>
-                <li class="list-item">Unlimited Bandwith</li>
-                <li class="list-item">Realtime Database</li>
-                <li class="list-item">Monthly Backup</li>
-                <li class="list-item">24/7 Support</li>
-              </ul>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Institute Type</span>
+                </div>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-outline-primary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Select
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item">University</a>
+                    <a class="dropdown-item">School</a>
+                    <a class="dropdown-item">Coaching Center</a>
+                    <a class="dropdown-item">Group of Institutes</a>
+                    <a class="dropdown-item">Independent Institute</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button class="btn btn-dark">Choose Plan</button>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Services Required</span>
+              <button class="btn btn-primary">Select</button>
+            </div>
+            <br />
+            <button
+              class="btn btn-gradient"
+              style="float: right; margin-right: 5em"
+            >
+              Calculate
+            </button>
           </div>
-          <div class="pricing-item">
+
+          <div class="pricing-item active no-transform">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Net Value</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li
+                class="list-group-item d-flex justify-content-between lh-condensed"
+              >
+                <div>
+                  <h6 class="my-0">Pricing Breakdown</h6>
+                  <small class="text-muted"></small>
+                </div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between lh-condensed"
+              >
+                <div>
+                  <h6 class="my-0">Total Users</h6>
+                  <small class="text-muted">Students + Management</small>
+                </div>
+                <span class="text-muted">5,000</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between lh-condensed"
+              >
+                <div>
+                  <h6 class="my-0">Cost per User</h6>
+                  <small class="text-muted">1 user / day</small>
+                </div>
+                <span class="text-muted">₹ 0.35</span>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between lh-condensed"
+              >
+                <div>
+                  <h6 class="my-0">Cost per User</h6>
+                  <small class="text-muted">1 user / month</small>
+                </div>
+                <strong class="text-center">₹10.5</strong>
+              </li>
+            </ul>
+
+            <form class="card p-2">
+              <div class="pricing-header">
+                <h5 class="fw-normal">
+                  Reasonable Value
+                  <br />
+                  (per month)
+                </h5>
+                <h1 class="text-success">₹ 50,000</h1>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Negotiate -->
+
+        <div class="pricing-table mt-5">
+          <div class="pricing-item active no-transform" style="width: 40em">
             <div class="pricing-header">
-              <h5>Starter Plan</h5>
-              <h1 class="fw-normal">$24.00</h1>
+              <h5 class="text-muted">Price optimization</h5>
+              <h1 class="fw-normal">Get Estimate</h1>
             </div>
-            <div class="pricing-body">
-              <ul class="theme-list">
-                <li class="list-item">Push Notification</li>
-                <li class="list-item">Unlimited Bandwith</li>
-                <li class="list-item">Realtime Database</li>
-                <li class="list-item">Monthly Backup</li>
-                <li class="list-item">24/7 Support</li>
-              </ul>
+            <div style="width: 30em">
+              <h5>Don't worry just contact us!</h5>
+              <hr />
+              <h6>Phone: <a href="tel:+919756382029">9756382029</a></h6>
+              <h6>
+                Email:
+                <a href="mailto:official@adorway.com">official@adorway.com</a>
+              </h6>
+              <h6>Address: Near MJP Rohilkahand University, Bareilly, UP</h6>
             </div>
-            <button class="btn btn-dark">Choose Plan</button>
           </div>
         </div>
       </div>
